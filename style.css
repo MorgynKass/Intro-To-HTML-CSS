@@ -1,0 +1,232 @@
+body{
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.succulent{
+    position: relative;
+}
+
+.succulent img{
+    display: block;
+    max-height: 450px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.succulent .welcome{
+    display: inline;
+    background-color: #ae6b42e3;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 23px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+
+.succulent h2{
+    padding-right: 150px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px dotted white;
+    font-size: 26px;
+}
+
+.succulent h2 span{
+    font-size: 1.3em;
+}
+
+header{
+    background-color: #ae6b42;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    display: inline-block;
+    color: #ffffff;
+    border: 4px dotted white;
+    padding: 5px 40%;
+}
+
+nav{
+    background-color: #ae6b42bf;
+    padding: 7px;
+    position: sticky;
+    top: 98px;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav ul{
+    text-align: center;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: #ae6b42;
+    font-size: 27px;
+}
+
+article p{
+    line-height: 2em;
+    color: #dea27c;
+}
+
+.images{
+    text-align: center;
+    margin: 20px 0;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 2%;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+.join{
+    background: #ae6b42;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.join h2{
+    font-size: 22px;
+}
+
+form input{
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+
+footer{
+    background: #ae6b42;
+    color: #ffffff;
+    padding: .5px;
+    text-align: center;
+}
+
+/* pseudo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+    color: #82b382;
+}
+.images li:hover{
+    position: relative;
+    top: -10px;
+}
+form input:focus{
+    border: 3px solid #b60000;
+    outline: none;
+}
+form input:valid{
+    border: 3px solid #00b800;
+    outline: none;
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #e68040;
+}
+.join p::after{
+    content: "...";
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1000px){
+
+    .succulent .welcome h2{
+        font-size:19px;
+    }
+    .succulent .welcome{
+        top: 51%;
+    }
+    nav li{
+        font-size: 15px;
+    }
+    nav ul{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 790px){
+
+    .succulent .welcome h2{
+        font-size: 13px;
+    }
+    .succulent .welcome{
+        top: 54%;
+    }
+    nav li{
+        font-size: 13px;
+        padding: 0px;
+    }
+    nav{
+        top: 94px;
+    }
+    nav ul{
+        padding-left: 0px;
+    }
+    header h1{
+        padding: 3px 30%;
+    }
+}
+@media screen and (max-width: 500px){
+    header{
+        font-size: 12px;
+    }
+    nav{
+        font-size: 13px;
+        top: 73px;
+    }
+    .succulent .welcome h2{
+        font-size: 10px;
+    }
+    nav li{
+        font-size: 13px;
+        text-align: left; 
+        display: block;
+        width: 100%;
+        margin: 9px 0;
+    }
+    nav ul{
+        padding-left: 0px;
+    }
+}
